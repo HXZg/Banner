@@ -43,9 +43,9 @@ class Banner @JvmOverloads constructor(context: Context, attributes: AttributeSe
             super.onPageSelected(position)
             val realPosition = BannerUtils.getRealPosition(position,mBannerSize)
             if (position == 0 || position == BannerUtils.MAX_VALUE_SIZE - 1) {
-                resetCurrentItem(realPosition)
+                resetCurrentItem(realPosition)  // 重新移动至中间位置
             }
-            if (inDecorateViews.isNotEmpty()) {
+            if (inDecorateViews.isNotEmpty()) {  // 设置指示器 选中状态
                 inDecorateViews[currentPosition].isSelected = false
                 inDecorateViews[realPosition].isSelected = true
             }

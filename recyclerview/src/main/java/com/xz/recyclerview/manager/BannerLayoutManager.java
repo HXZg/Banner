@@ -722,7 +722,7 @@ public class BannerLayoutManager extends RecyclerView.LayoutManager {
                 }
                 if (i == currentPos) currentFocusView = scrap;
                 lastOrderWeight = orderWeight;
-                positionCache.put(i, scrap);
+                positionCache.put(i, scrap);  // 缓存view
             }
         }
 
