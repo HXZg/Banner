@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="xui_config_color_red">#F15C58</color>
+    <color name="xui_config_color_gray_2">#49505A</color>
+</resources>

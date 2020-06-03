@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Banner">
+        <!--轮播间隔，单位ms，默认是4000ms-->
+        <attr name="banner_time" format="integer" />
+        <!--是否是自动轮播，默认是true-->
+        <attr name="banner_autoPlaying" format="boolean" />
+        <attr name="banner_canLoop" format="boolean"/>
+        <!--  指示器 -->
+        <!--轮播索引选中的效果-->
+        <attr name="banner_SelectedSrc" format="reference" />
+        <!--轮播索引未选中的效果-->
+        <attr name="banner_UnselectedSrc" format="reference" />
+        <!--轮播索引的大小，默认20px-->
+        <attr name="banner_indicatorSize" format="dimension" />
+        <!--轮播索引选中的颜色-->
+        <attr name="banner_SelectedColor" format="color" />
+        <!--轮播索引未选中的颜色-->
+        <attr name="banner_UnselectedColor" format="color" />
+        <!--索引器之间的间隔，默认20px-->
+        <attr name="banner_indicatorSpace" format="dimension" />
+        <!--索引器的左侧边距，默认0-->
+        <attr name="banner_MarginLeft" format="dimension" />
+        <!--索引器的右侧边距，默认0dp-->
+        <attr name="banner_MarginRight" format="dimension" />
+        <!--索引器的底部边距，默认10px-->
+        <attr name="banner_MarginBottom" format="dimension" />
+        <attr name="banner_MarginTop" format="dimension"/>
+        <!--索引器的对齐方式，默认left-->
+        <attr name="banner_idOrientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="banner_indicatorGravity">
+            <flag name="left" value="0x08" />
+            <flag name="center" value="0x04" />
+            <flag name="right" value="0x10" />
+            <flag name="top" value="0x01"/>
+            <flag name="bottom" value="0x02"/>
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.hxz.banner.Banner
+            android:id="@+id/bn_main_zoom"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:banner_canLoop="false"
+            app:banner_autoPlaying="true"/>
+
+        <com.hxz.banner.Banner
+            android:id="@+id/bn_main_depth"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            app:banner_canLoop="true"
+            app:banner_autoPlaying="false"
+            app:banner_SelectedColor="@color/red"
+            app:banner_UnselectedColor="@color/black"/>
+
+        <com.hxz.banner.Banner
+            android:id="@+id/bn_main_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            app:banner_SelectedColor="@color/colorAccent"
+            app:banner_UnselectedColor="@color/colorPrimary"
+            app:banner_indicatorGravity="top|center"
+            app:banner_canLoop="true"
+            app:banner_MarginTop="20dp"/>
+
+        <com.xz.recyclerview.BannerLayout
+            android:id="@+id/bn_main_rv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>
